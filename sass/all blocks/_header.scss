@@ -1,0 +1,41 @@
+.header__items{
+    @include flex-between;
+    .header-items__menu-items{
+        @include flex-between;
+        ul li{
+            padding: 0 10px;
+            list-style-type: none;
+            display: inline-block;
+            font-weight: bold;
+        }
+        li:first-child a{
+            color: #a8a8a8;
+            text-decoration: none;
+        }
+        li a{
+            color: black;
+        }
+        .menu-items__all-lines{
+            width: 60px;
+            @include flex-col;
+            .norm-line{
+                width: 25px;
+                height: 4px;
+                background-color: black;
+                margin: 3px 0;
+            }
+            .long-line{
+                width: 35px;
+                height: 4px;
+                background-color: black;
+                margin: 3px 0;
+            }
+            .short-line{
+                width: 20px;
+                height: 4px;
+                background-color: black;
+                margin: 3px 0;
+            }
+        }
+    }
+}

@@ -1,3 +1,46 @@
 @import "./variables/variables";
 @import "./mixin/all-mixin";
 @import "./all blocks/all-blocks";
+
+.main-section{
+    .main-section__card-items{
+        @include flex-between;
+        .card-items__title{
+            @include flex-between;
+            align-items: end;
+            position: relative;
+            width: 1000px;
+            height: 500px;
+            .title__text-block{
+                position: absolute;
+                width: 65vw;
+                font-size: 40px;
+                bottom: 250px;
+                h1{
+                    font-weight: normal;
+                    font-size: 90px;
+                }
+            }
+            .title__all-btn-block{
+                margin: 0 auto;
+                button:first-child{
+                    border: none;
+                    border-bottom: 1px solid red;
+                    font-size: 20px;
+                    padding: 10px 60px;
+                    margin: 0 20px;
+                    opacity: 60%;
+                }
+                button:last-child{
+                    background-color: red;
+                    margin: 0 20px;
+                    padding: 15px 30px;
+                    border: none;
+                    color: white;
+                    border-radius:3px;
+                    opacity: 60%;
+                }
+            }
+        }
+    }
+}
